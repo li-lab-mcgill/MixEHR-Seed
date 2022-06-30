@@ -1,0 +1,7 @@
+index,path,word_column
+icd,./data/icd_toy_data.csv,ICD9
+pres,./data/pres_toy_data.csv,COMPOUND_ID
+cpt,./data/cpt_toy_data.csv,ICD9_CODE
+drg,./data/drg_toy_data.csv,COMPOUND_ID
+lab,./data/lab_toy_data.csv,LABEL
+note,./data/note_toy_data.csv,TERM
