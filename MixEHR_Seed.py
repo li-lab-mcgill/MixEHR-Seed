@@ -205,6 +205,7 @@ class MixEHR_Seed(nn.Module):
             self.exp_n_sum[guided_m] = torch.sum(self.exp_n[guided_m], dim=0)  # sum over w, exp_n is [V K] dimensionality
             self.update_hyperparams(gamma_sr_sum)  # update hyperparameters
 
+
     def SCVB0_unguided(self, batch_BOW, batch_indices, batch_C, iter_n, unguided_m):
         temp_exp_n = torch.zeros(self.V[unguided_m], self.K, dtype=torch.double, device=device)
         gamma_sum = torch.zeros(self.K, dtype=torch.double, device=device)
@@ -238,6 +239,7 @@ class MixEHR_Seed(nn.Module):
         self.pi = self.exp_s_sum / (self.exp_s_sum + gamma_sr_sum + mini_val)
         # fill pi_init for pi_k with non-computed topic k (as gamma is 0) or very low value
         self.pi = torch.where(self.pi > 0.1, self.pi, torch.ones(self.K, dtype=torch.double, device=device)*self.pi_init)
+
 
     def inference(self, max_epoch=100, save_every=1):
         '''

@@ -15,7 +15,11 @@ topic mixture memberships \theta, regular topic distributions \phi^r, seed topic
 The proababilistic graphical model of MixEHR-S is shown:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <img src="https://github.com/li-lab-mcgill/MixEHR-Seed/blob/main/figures/PGM.jpg" width="500" height="350">
+=======
+<img src="https://github.com/li-lab-mcgill/MixEHR-Seed/blob/main/figures/PGM.jpg" width="920" height="350">
+>>>>>>> 625194aabdd91d62e141da666691a604da1c5f7e
 =======
 <img src="https://github.com/li-lab-mcgill/MixEHR-Seed/blob/main/figures/PGM.jpg" width="920" height="350">
 >>>>>>> 625194aabdd91d62e141da666691a604da1c5f7e
@@ -25,11 +29,15 @@ The proababilistic graphical model of MixEHR-S is shown:
 
 This published code is referenced from: 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Ziyang Song, Yuanyi Hu, Aman Verma, David Buckeridge, and Yue Li. 2022.
 Automatic Phenotyping by a Seed-guided Topic Model. In Proceedings of the
 28th ACM SIGKDD Conference On Knowledge Discovery and Data Mining,
 August 14–18, 2022, Washington, DC. ACM, New York, NY, USA, 12 pages.
 https://doi.org/10.1145/1122445.1122456
+=======
+Ziyang Song, Yuanyi Hu Aman Verma, David Buckeridge, and Yue Li*. (2022) Automatic phenotyping by a seed-guided topic model. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD ’22), August 14–18, 2022, Washington, DC, USA. ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3534678.3542675 (KDD HealthDay2022 Best Paper award)
+>>>>>>> 625194aabdd91d62e141da666691a604da1c5f7e
 =======
 Ziyang Song, Yuanyi Hu Aman Verma, David Buckeridge, and Yue Li*. (2022) Automatic phenotyping by a seed-guided topic model. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD ’22), August 14–18, 2022, Washington, DC, USA. ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3534678.3542675 (KDD HealthDay2022 Best Paper award)
 >>>>>>> 625194aabdd91d62e141da666691a604da1c5f7e
