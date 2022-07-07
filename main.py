@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser()
 # default arguments
 parser.add_argument('corpus', help='Path to read corpus file', default='./store/')
 parser.add_argument('output', help='Directory to store model', default='./result/')
-parser.add_argument("-epoch", "--max_epoch", help="Maximum number of max_epochs", type=int, default=100)
+parser.add_argument("-epoch", "--max_epoch", help="Maximum number of max_epochs", type=int, default=10)
 parser.add_argument("-batch_size", "--batch_size", help="Batch size of a minibatch", type=int, default=1000)
 parser.add_argument("-every", "--save_every", help="Store model every X number of iterations", type=int, default=1)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu") # we use GPU, printed result is "cuda"

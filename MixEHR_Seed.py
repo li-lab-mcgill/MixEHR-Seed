@@ -241,7 +241,7 @@ class MixEHR_Seed(nn.Module):
         self.pi = torch.where(self.pi > 0.1, self.pi, torch.ones(self.K, dtype=torch.double, device=device)*self.pi_init)
 
 
-    def inference(self, max_epoch=100, save_every=1):
+    def inference(self, max_epoch=10, save_every=1):
         '''
         inference algorithm for dynamic seed-guided topic model, apply stochastic collaposed variational inference for latent variable z,
         and apply stochastic gradient descent for dynamic variables \eta (\alpha)
@@ -288,7 +288,6 @@ class MixEHR_Seed(nn.Module):
                             self.SCVB0_unguided(batch_BOW_m, batch_indices, batch_C_m, batch, unguided_m=m)
             self.save_parameters(epoch)
             self.exp_q_z = 0  # update to zero for next minibatch
-                
         return self.elbo
 
     def save_parameters(self, epoch):
